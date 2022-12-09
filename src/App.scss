@@ -1,0 +1,53 @@
+@import "~bootstrap/scss/bootstrap";
+
+$font-stack: Helvetica, sans-serif;
+$primary-color: rgb(66, 180, 155);
+
+body {
+//   color: white;
+  font: 100% $font-stack;
+  color: $primary-color;
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+}
+
+.container {
+    .App-logo {
+        margin: 0 30%;
+        height: 25vmin;
+        pointer-events: none;
+    }
+    p, a {
+        margin: 10% -40%; 
+    }
+}
+
+// .App-logo {
+//     margin: 0 30%;
+//     height: 25vmin;
+//     pointer-events: none;
+//   }
+
+//   p, a {
+//     margin: 10% -40%; 
+//   }
+
+@media (prefers-reduced-motion: no-preference) {
+    .App-logo {
+        animation: App-logo-spin infinite 20s linear;
+    }
+}  
+
+@keyframes App-logo-spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
