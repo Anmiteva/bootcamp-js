@@ -1,7 +1,7 @@
-import './About.css';
+import './About.scss';
 
 const About = () => {
-    <div>
+    return <div>
         <h1>About</h1>
     </div>
 }

@@ -1,7 +1,7 @@
-import './Menu.css';
+import './Menu.scss';
 
 const Menu = () => {
-    <div>
+    return <div>
         <h1>Menu</h1>
     </div>
 }
