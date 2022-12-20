@@ -1,17 +1,27 @@
-import { Link } from 'react-router-dom';
-import "./Navigation.scss";
+import { Link } from "react-router-dom"
+import "./Navigation.scss"
+
+import { FaBars } from 'react-icons/fa'
+import { useRef } from "react";
+
 
 const Navigation = () => {
+
+	const navRef = useRef();
+
+	const showNavbar = () => {
+		navRef.current.classList.toggle("responsive-nav");
+	}
+
 	return (
 		<header>
-			<div className='logo'>
-				<img
-					src='./logo_elixir.png'
-					alt='logo'
-				/>
+			<div className='logo' onClick={!!showNavbar}>
+				<Link to='/'><img src='./logo_elixir.png' alt='logo'/></Link>
 			</div>
-			<div className='navigation'>
-				<ul>
+			<div 
+			ref={navRef} 
+			className='navigation'>
+				<ul onClick={showNavbar}>
 					<li>
 						<Link to='/'>Home</Link>
 					</li>
@@ -32,6 +42,9 @@ const Navigation = () => {
 					</li>
 				</ul>
 			</div>
+			<button 
+			onClick={showNavbar} 
+			className='nav-btn'><FaBars/></button>
 		</header>
 	);
 };
