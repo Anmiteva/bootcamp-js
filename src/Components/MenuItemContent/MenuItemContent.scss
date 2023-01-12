@@ -1,0 +1,28 @@
+@import "../../constants.scss";
+
+.menu-item {
+    display: flex;
+    flex-wrap: wrap;
+    .content-item {
+        min-width: 265px;
+        h3 {
+            color: black;
+            font-size: 16px;
+            text-transform: uppercase;
+        }
+        h3, p {
+            margin: -5px 0; 
+        }
+        p, span {
+            font-size: 13px;
+            padding-bottom: 20px;
+            display: inline-block;
+        }
+        span {
+            float: right;
+            color: $prices;
+            margin-top: 2px;
+            margin-left: 20px;
+        }
+    }
+}

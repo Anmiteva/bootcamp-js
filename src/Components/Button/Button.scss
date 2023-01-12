@@ -1,0 +1,15 @@
+@import "../../constants.scss";
+
+.menu-button {
+    padding: 10px;
+    font-size: 1em;
+    cursor: pointer;
+    text-decoration: none;
+    background-color: transparent;
+    border: 2px solid $the-history-title;
+    color: $the-history-title;
+}
+
+.menu-button, .menu-logo-line1, .menu-logo-line2 {
+    margin-top: 50px;
+}

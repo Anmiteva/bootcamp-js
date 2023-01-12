@@ -1,0 +1,161 @@
+@import "../../constants.scss";
+
+.complete-section {
+    .complete-menu {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        margin-top: 100px;
+        .complete-menu-line {
+            display: flex;
+            flex-direction: row;
+            .complete-menu-lines {
+                margin: 20px 20px;
+                background-color: #e5e0e0;
+            }
+            h2 {
+                color: $pizzas-and-desserts;    
+            }
+        }
+        .color {
+            font-size: 1.5em;
+            margin-bottom: 50px;
+            color: $exclusive-and-delicious;
+            font-family: $LobsterTwo-Italic;
+        }
+        img {
+            margin-bottom: 50px;
+            object-fit: scale-down;
+        }
+        .bottom {
+            margin-bottom: 50px;
+            .complete-menu-item {
+                padding: 0 50px;
+            }
+        }
+        .ornament {
+            margin: 50px 100px 100px 0;
+        }
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .complete-section {
+        .complete-menu {
+            .complete-menu-item {
+                .media1 {
+                    margin: 0 15px 0 -30px;
+                }
+                .media2 {
+                    margin-right: 15px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .complete-section {
+        .complete-menu {
+            left: 20px;
+            position: relative;
+            margin-left: -100px;
+            .complete-menu-line, .color {
+                left: 40px;
+                position: relative;
+            }
+            .complete-menu-lines {
+                max-width: 300px;
+            }
+            .ornament {
+                left: 3%;
+                position: relative;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .complete-section {
+        .complete-menu {
+            max-width: 60%;
+            .complete-menu-line, .complete-menu-lines {
+                width: 30%;
+                margin: 0 25%;
+                .complete-menu-lines {
+                    min-width: 200px; 
+                }
+            }
+            .color {
+                left: 28%;
+                position: relative;
+            }
+            img {
+                margin-left: 250px;
+            }
+            .complete-menu-item {
+                margin-left: 50px;   
+                .media1 {
+                    right: 50px;
+                    min-width: 50%;
+                    position: relative;
+                }
+                .media2 {
+                    left: 60px;
+                    min-width: 50%;
+                    position: relative;
+                }
+                .media3 {
+                    margin: 50px 0 -20px 20%;
+                }
+            }
+            .ornament {
+                margin: 50px -250px 100px 0;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .complete-section {
+        .complete-menu {
+            .complete-menu-line {
+                margin: 0 30%;
+                .complete-menu-lines {
+                    top: -5px;
+                    min-width: 90%;
+                    position: relative;
+                    background-color: #c2bebe !important;
+                }
+            }
+            .color {
+                left: 72%;
+                min-width: 150%;
+                font-size: 1.2em;
+            }
+            img {
+                max-width: 300px;
+                max-height: 200px;
+                margin-right: 50px;
+            }
+            .complete-menu-item {
+                display: inline-block;
+                .media1 {
+                    top: 0;
+                    left: 100px;
+                }
+                .media2 {
+                    top: 50px;
+                    left: 70px;
+                }
+                .media3 {
+                    margin: 100px 15%;
+                    margin-bottom: 50px;
+                }
+            }
+            .ornament {
+                margin: 0 -200px 100px 0;
+            }
+        }
+    }
+}

@@ -5,6 +5,8 @@ import './Components/Slider/carousel.scss'
 
 
 import Layout from './Components/Layout';
+import React from 'react';
+import './App.scss';
 
 function App() {
 	
@@ -17,8 +19,3 @@ function App() {
 	);
 }
 	export default App;
-
-
-
-
-
