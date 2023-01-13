@@ -60,3 +60,12 @@
     font-style: normal;
     font-display: swap;
 }
+
+@font-face {
+    font-family: 'Sofia Sans Extra Condensed';
+    src: url('./fonts/SofiaSansExtraCondensed-Thin.woff2') format('woff2'),
+        url('./fonts/SofiaSansExtraCondensed-Thin.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}

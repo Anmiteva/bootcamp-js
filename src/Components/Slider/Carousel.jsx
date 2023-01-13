@@ -1,58 +1,47 @@
-
-import React, { useState } from 'react';
+import React from 'react';
 import { Carousel } from 'react-bootstrap';
 import './carousel.scss';
 
-
-function ControlledCarousel(props) {
-	const [index, setIndex] = useState(0);
-
-	const handleSelect = (selectedIndex, e) => {
-		setIndex(selectedIndex);
-	};
-
+function ControlledCarousel({ indicators, controls, slideData }) {
 	return (
-			<Carousel 
-				indicators={props.indicators}
-				controls={props.controls}
-				activeIndex={index}
-				onSelect={handleSelect}>
-		
-			<Carousel.Item >
-				<img 
-					className='d-block w-100'
-					src={require('./images/03.jpg')} 
-					alt='First slide'
-				/>
-			</Carousel.Item>
-					
-			<Carousel.Item interval={2000}>
-				<img
-					className='d-block w-100'
-					src={require('./images/01.jpg')}
-					alt='Second slide'
-				/>
-			</Carousel.Item>
-		
-			<Carousel.Item interval={2000}>
-				<img
-					className='d-block w-100'
-					src={require('./images/02.jpg')}
-					alt='Third slide'
-				/>
-			
-				<ol className="carousel-indicators">
-                    <li data-target="#mycarousel" data-slide-to="0" className="active"></li>
-                    <li data-target="#mycarousel" data-slide-to="1" ></li>
-                    <li data-target="#mycarousel" data-slide-to="2" ></li>
-            </ol>
-			</Carousel.Item>
-		</Carousel>		
+		<Carousel
+			slide={false}
+			indicators={indicators}
+			controls={controls}>
+			{slideData.map((slide) => {
+				return (
+					<Carousel.Item
+						interval={5000}
+						key={slide.id}>
+						<img
+							className='d-block w-100'
+							src={slide.image}
+							alt={'Pasta' + slide.id}
+						/>
+
+						{controls && (
+							<Carousel.Caption>
+								<img
+									className='intro'
+									src={slide.intro}
+									alt={'Pizza one' + slide.id}
+								/>
+								<h3 className='slide-title'>{slide.title}</h3>
+								<img
+									className='separator'
+									src={slide.separator}
+									alt={'Pizza two' + slide.id}
+								/>
+								<p className='description'>
+									{slide.description}
+								</p>
+							</Carousel.Caption>
+						)}
+					</Carousel.Item>
+				);
+			})}
+		</Carousel>
 	);
 }
 
 export default ControlledCarousel;
-
-
-
-

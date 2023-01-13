@@ -6,6 +6,7 @@ import About from "./About/About";
 import CompleteMenu from "./CompleteMenu/CompleteMenu";
 
 const Layout = () => {
+
     return <Routes>
             <Route path='/' element={<Home />} />
             <Route path='/about' element={<About />} />

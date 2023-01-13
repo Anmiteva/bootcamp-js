@@ -15,7 +15,7 @@ const Navigation = () => {
 
 	return (
 		<header>
-			<div className='logo' onClick={!!showNavbar}>
+			<div className='logo' onClick={showNavbar}>
 				<Link to='/'><img src='./logo_elixir.png' alt='logo'/></Link>
 			</div>
 			<div 

@@ -1,0 +1,71 @@
+@import '../../constants.scss';
+
+div.about-section-layout {
+	margin-bottom: 40px;
+
+	div.row {
+		div.col-md {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			gap: 30px;
+
+			h3 {
+				font-size: 44px;
+				font-family: $LobsterTwo-Italic;
+				text-align: center;
+				color: $the-history-title;
+			}
+
+			p {
+				font-family: $Bitter-Regular;
+				color: $test;
+				text-align: left;
+				font-size: 14px;
+				font-weight: 300;
+				line-height: 1.8em;
+				text-indent: 35px;
+			}
+
+			img.ornament {
+				width: 100px;
+				text-align: center;
+			}
+		}
+
+		div.slider {
+			justify-content: center;
+		}
+	}
+}
+
+.displayNone {
+	display: none;
+}
+
+
+------------------ Carousel scss --------------------
+
+div.about-section-layout .carousel-indicators {
+	margin-bottom: -35px;
+	gap: 7px;
+	
+	[data-bs-target] {
+		box-sizing: content-box;
+		flex: 0 1 auto;
+		width: 10px;
+		height: 10px;
+		text-indent: -999px;
+		cursor: pointer;
+		background-color: #fff;
+		background-clip: padding-box;
+		border: 2px solid #c8c7c5;
+		opacity: 0.5;
+		transition: opacity 0.6s ease;
+		border-radius: 100%;
+	}
+	[data-bs-target].active {
+		border-color: #c8c7c5;
+		background-color: #c8c7c5;
+	}
+}

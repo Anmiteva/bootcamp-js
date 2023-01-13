@@ -1,0 +1,36 @@
+@import '../../constants.scss';
+
+div.about-title {
+	margin-top: 4rem;
+	div.row {
+		div.col {
+			div.about-main-title {
+				display: flex;
+				flex-direction: row;
+				justify-content: center;
+				align-items: center;
+				padding: 10px;
+				gap: 15px;
+				margin-top: 40px;
+			}
+
+			h2 {
+				font-family: $Bitter-Regular;
+				color: $main-text;
+			}
+
+			div.about-sub-title {
+				padding: 20px;
+				width: 60%;
+				margin: 0 auto;
+
+				p {
+					font-family: $Bitter-Regular;
+					color: $test;
+					text-align: center;
+					font-size: 14px;
+				}
+			}
+		}
+	}
+}
