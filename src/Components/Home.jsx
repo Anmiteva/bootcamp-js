@@ -3,6 +3,7 @@ import TitleLayout from './TitleLayout/TitleLayout';
 import AboutSectionLayout from './AboutSectionLayout/AboutSectionLayout';
 import TextDecoration from './TextDecoration/TextDecoration';
 import ControlledCarousel from './Slider/Carousel';
+import AnimatedDownArrow from './AnimatedDownArrow/AnimatedDownArrow';
 
 const Home = () => {
 	const aboutTitle = {
@@ -119,6 +120,7 @@ const Home = () => {
 	return (
 		<>
 			<ControlledCarousel indicators={false} controls={true} slideData={homeSlideData} />
+			<AnimatedDownArrow />
 			<TitleLayout
 				title={aboutTitle.title}
 				subTitle={aboutTitle.subTitle}
