@@ -1,0 +1,93 @@
+@import '../../constants.scss';
+
+.contactForm{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 35rem;
+    background-color: rgb(42,34,12);
+    color: white;
+
+
+    h2{
+        color: rgb(228,228,225);
+        text-transform: uppercase;
+        text-align: center;
+    }
+
+    p{
+        color: rgb(150, 148, 140);
+        text-align: center;
+        margin-top: 1.6rem;
+    }
+
+    button{
+        width: 8rem;
+        padding: 8px;
+        background-color: red;
+        color: white;
+        border: none;
+        border-radius: 3px;
+        cursor: pointer;
+        margin-top: 2rem;
+    }
+
+    .decorationDiv{
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        // background-color: rgb(195, 148, 148);
+        width: 400px;
+
+        img {
+            // margin: 0 2rem;
+            width: 50px;
+        }
+    }
+
+    form{
+        display: grid;
+        grid-template-columns: repeat(2, 350px);
+        // grid-template-rows: repeat(3, 1fr);
+        grid-column-gap: 20px;
+        grid-row-gap: 20px;
+        margin-top: 1.5rem;
+    }
+
+
+    @media only screen and (max-width: 991px){
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+        align-items: center;
+        justify-content: center;
+        
+        .decorationDiv{
+            width: 300px;
+            margin-top: 3rem;
+        }
+
+        h2{
+            font-size: 1.5rem;
+        }
+
+        p{
+            margin-top: 0.6rem;
+            font-size: 0.9rem;
+        }
+
+        form{
+            display: flex;
+            flex-direction: column;
+            grid-row-gap: 1rem;
+            margin-top: 0.1rem;
+        }
+
+        button{
+            margin-bottom: 3rem;
+            margin-top: 1rem;
+        }
+    }
+}

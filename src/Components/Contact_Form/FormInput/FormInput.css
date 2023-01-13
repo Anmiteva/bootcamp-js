@@ -46,4 +46,47 @@
   font-weight: normal;
   font-style: normal;
   font-display: swap;
-}/*# sourceMappingURL=Menu.css.map */
+}
+.formInput input {
+  padding: 10px;
+  background-color: rgb(56, 48, 21);
+  color: white;
+  width: 350px;
+  border: none;
+}
+.formInput ::-webkit-input-placeholder {
+  color: rgb(228, 228, 225);
+}
+.formInput label {
+  display: none;
+}
+.formInput span {
+  font-size: 10px;
+  padding: 3px;
+  color: #DD0400;
+  display: none;
+  word-wrap: break-word;
+}
+.formInput input:invalid[focused=true] {
+  border: 1px solid red;
+}
+.formInput input:invalid[focused=true] ~ span {
+  display: block;
+}
+
+.formInput:last-child {
+  grid-row-start: 1;
+  grid-row-end: 4;
+  grid-column-start: 2;
+  justify-content: flex-start;
+  align-items: flex-start;
+  text-align: start;
+}
+.formInput:last-child input {
+  width: 350px;
+  height: 172px;
+  padding-bottom: 140px;
+}
+.formInput:last-child ::-webkit-input-placeholder {
+  color: rgb(228, 228, 225);
+}/*# sourceMappingURL=FormInput.css.map */

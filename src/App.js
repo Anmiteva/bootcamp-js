@@ -2,6 +2,7 @@ import React from 'react';
 import './App.scss';
 import Navigation from './Components/Navigation/Navigation';
 import Layout from './Components/Layout';
+import ContactForm from './Components/Contact_Form/ContactForm';
 
 function App() {
 	
@@ -9,6 +10,7 @@ function App() {
 		<div className='App'>
 			<Navigation />
 			<Layout />
+			<ContactForm />
 		</div>
 	);
 }
