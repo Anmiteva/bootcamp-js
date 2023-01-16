@@ -4,11 +4,11 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 
-const AboutTitleLayout = ({ title, subTitle }) => {
+const TitleLayout = ({ title, subTitle }) => {
 	
 	return (
-		<Container
-			className='about-title'>
+		<Container className='about-title'>
+
 			<Row>
 				<Col>
 					<div className='about-main-title'>
@@ -31,4 +31,4 @@ const AboutTitleLayout = ({ title, subTitle }) => {
 	);
 };
 
-export default AboutTitleLayout;
+export default TitleLayout;

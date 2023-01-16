@@ -1,13 +1,12 @@
 import React from 'react';
-import AboutSectionLayout from '../AboutSectionLayout/AboutSectionLayout';
-import TextDecoration from '../TextDecoration/TextDecoration';
-import AboutTitleLayout from '../TitleLayout/TitleLayout';
+import AboutLayout from '../AboutLayout/AboutLayout';
 import './About.scss';
 
 const About = () => {
 	const aboutTitle = {
 		title: 'ABOUT US',
-		subTitle: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti at optio sit doloremque consequatur quod earum ad atque provident molestias!',
+		subTitle:
+			'Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti at optio sit doloremque consequatur quod earum ad atque provident molestias!',
 	};
 
 	const aboutLayoutContent = [
@@ -24,30 +23,30 @@ const About = () => {
 			},
 			aboutSlider: [
 				{
-						  id: 'aboutSlider1',
-						  image: './about01.jpg',
-						  intro: '',
-						  separator: '',
-						  title: '',
-						  description: '',
-						},
-						{
-						  id: 'aboutSlider2',
-						  image: './about02.jpg',
-						  intro: '',
-						  separator: '',
-						  title: '',
-						  description: '',
-						},
-						{
-						  id: 'aboutSlider3',
-						  image: './about03.jpg',
-						  intro: '',
-						  separator: '',
-						  title: '',
-						  description: '',
-						}
-			]
+					id: 'aboutSlider1',
+					image: './about01.jpg',
+					intro: '',
+					separator: '',
+					title: '',
+					description: '',
+				},
+				{
+					id: 'aboutSlider2',
+					image: './about02.jpg',
+					intro: '',
+					separator: '',
+					title: '',
+					description: '',
+				},
+				{
+					id: 'aboutSlider3',
+					image: './about03.jpg',
+					intro: '',
+					separator: '',
+					title: '',
+					description: '',
+				},
+			],
 		},
 		{
 			id: 'layout2',
@@ -62,56 +61,43 @@ const About = () => {
 			},
 			aboutSlider: [
 				{
-						  id: 'aboutSlider4',
-						  image: './about04.jpg',
-						  intro: '',
-						  separator: '',
-						  title: '',
-						  description: '',
-						},
-						{
-						  id: 'aboutSlider5',
-						  image: './about05.jpg',
-						  intro: '',
-						  separator: '',
-						  title: '',
-						  description: '',
-						},
-						{
-						  id: 'aboutSlider6',
-						  image: './about06.jpg',
-						  intro: '',
-						  separator: '',
-						  title: '',
-						  description: '',
-						}
-			]
+					id: 'aboutSlider4',
+					image: './about04.jpg',
+					intro: '',
+					separator: '',
+					title: '',
+					description: '',
+				},
+				{
+					id: 'aboutSlider5',
+					image: './about05.jpg',
+					intro: '',
+					separator: '',
+					title: '',
+					description: '',
+				},
+				{
+					id: 'aboutSlider6',
+					image: './about06.jpg',
+					intro: '',
+					separator: '',
+					title: '',
+					description: '',
+				},
+			],
 		},
 	];
-    return (
+
+	return (
 		<>
-			<AboutTitleLayout
-				title={aboutTitle.title}
-				subTitle={aboutTitle.subTitle}
-			/>
-			{aboutLayoutContent.map((content) => (
-				<AboutSectionLayout
-					key={content.id}
-					ornament={content.ornament}
-					title={content.title}
-					indicators={content.indicators}
-					controls={content.controls}
-					aboutSlider={content.aboutSlider}
-					>
-					<TextDecoration
-						text={content.textDecoration.text}
-						coloredText={content.textDecoration.coloredText}
-						text2={content.textDecoration.text2}
-					/>
-				</AboutSectionLayout>
-			))}
+			<div className='margin5'>
+				<AboutLayout
+					aboutTitle={aboutTitle}
+					aboutLayoutContent={aboutLayoutContent}
+				/>
+			</div>
 		</>
-	)
-}
+	);
+};
 
 export default About;

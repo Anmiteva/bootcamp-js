@@ -1,16 +1,14 @@
 import React from 'react';
-import TitleLayout from './TitleLayout/TitleLayout';
-import AboutSectionLayout from './AboutSectionLayout/AboutSectionLayout';
-import TextDecoration from './TextDecoration/TextDecoration';
 import ControlledCarousel from './Slider/Carousel';
 import AnimatedDownArrow from './AnimatedDownArrow/AnimatedDownArrow';
+import AboutLayout from './AboutLayout/AboutLayout';
 
 const Home = () => {
 	const aboutTitle = {
 		title: 'ABOUT US',
 		subTitle: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti at optio sit doloremque consequatur quod earum ad atque provident molestias!',
 	};
- 
+
 	const aboutLayoutContent = [
 		{
 			id: 'layout1',
@@ -121,26 +119,7 @@ const Home = () => {
 		<>
 			<ControlledCarousel indicators={false} controls={true} slideData={homeSlideData} />
 			<AnimatedDownArrow />
-			<TitleLayout
-				title={aboutTitle.title}
-				subTitle={aboutTitle.subTitle}
-			/>
-			{aboutLayoutContent.map((content) => (
-				<AboutSectionLayout
-					key={content.id}
-					ornament={content.ornament}
-					title={content.title}
-					indicators={content.indicators}
-					controls={content.controls}
-					aboutSlider={content.aboutSlider}
-					>
-					<TextDecoration
-						text={content.textDecoration.text}
-						coloredText={content.textDecoration.coloredText}
-						text2={content.textDecoration.text2}
-					/>
-				</AboutSectionLayout>
-			))}
+			<AboutLayout aboutTitle={aboutTitle} aboutLayoutContent={aboutLayoutContent} />
 		</>
 	);
 };
