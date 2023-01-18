@@ -2,6 +2,8 @@ import React from 'react';
 import ControlledCarousel from './Slider/Carousel';
 import AnimatedDownArrow from './AnimatedDownArrow/AnimatedDownArrow';
 import AboutLayout from './AboutLayout/AboutLayout';
+import Paralax from "./Paralax/Paralax";
+import Menu from './Menu/Menu';
 
 const Home = () => {
 	const aboutTitle = {
@@ -120,6 +122,8 @@ const Home = () => {
 			<ControlledCarousel indicators={false} controls={true} slideData={homeSlideData} />
 			<AnimatedDownArrow />
 			<AboutLayout aboutTitle={aboutTitle} aboutLayoutContent={aboutLayoutContent} />
+			<Paralax />
+			<Menu />
 		</>
 	);
 };

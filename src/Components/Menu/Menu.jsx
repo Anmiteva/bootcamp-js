@@ -30,9 +30,9 @@ const Menu = () => {
                 </Col>
                 <Col md="6" lg="12">
                     <div className='menu-logo-line'>
-                        <img width={430} height={1} className='menu-logo-lines' src="./menu_img/menu_title_line.png" alt="alt img" />
+                        <img width={420} height={1} className='menu-logo-lines' src="./menu_img/menu_title_line.png" alt="alt img" />
                         <Button text={'view complete menu'} />
-                        <img width={430} height={1} className='menu-logo-lines' src="./menu_img/menu_title_line.png" alt="alt img" />
+                        <img width={420} height={1} className='menu-logo-lines' src="./menu_img/menu_title_line.png" alt="alt img" />
                     </div>
                 </Col>
             </Row>

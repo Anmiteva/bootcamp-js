@@ -1,35 +1,35 @@
 @import "../../constants.scss";
 
 .main-menu {
-    min-height: 90vh;
+    min-height: 95vh;
+    margin-right: 50px;
     margin-top: 100px;
     .menu-logo {
         text-align: center;
+        padding-left: 15px;
         .menu-logo1 {
             float: left;
             position: relative;
             top: 50px;
-            right: 111px;
+            right: 110px;
             width: 250px;
             height: 400px;
             margin-top: 100px;
-            z-index: -10;
         }
         .menu-logo2 {
             float: right;
             position: relative;
             top: 50px;
-            left: 111px;
+            left: 135px;
             width: 200px;
             height: 400px;
             margin-top: 120px;
-            z-index: -10;
         }
     }
     .menu-container {
-        margin: -300px -10px;
+        margin: -300px 0;
         position: relative;
-        right: 50px;
+        right: 40px;
         display: flex;
         flex-wrap: wrap;
         align-items: center;
@@ -40,7 +40,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        margin-left: 50px;
+        margin-left: 60px;
         .menu-logo-lines {
             margin-top: 50px;
             background-color: #e5e0e0;
@@ -66,7 +66,7 @@
             margin: 0 20%;
             .main-logo {
                 margin-top: 50px;
-                padding-left: 100px;
+                padding-left: 130px;
             }
             .menu-logo1 {
                 top: -350px;
@@ -79,12 +79,13 @@
         }
         .menu-container {
             column-gap: 100px;
-            padding-left: 150px;
-            margin: -850px -80px;
+            padding-left: 220px;
+            margin: -850px -100px;
+            left: -80px;
         }
         .menu-logo-line {
             top: -120px;
-            left: 185px;
+            left: 200px;
             position: relative;
         }
     }
@@ -93,26 +94,22 @@
 @media screen and (max-width: 576px) {
     .main-menu {
         .menu-logo {
-            margin: 0 20%;
             .main-logo {
-                margin-top: -20px;
-                padding: 0 70px;
+                max-width: 250px;
+                max-height: 250px;
+                margin: 0 -10px;
+                padding: 0;
             }
-            .menu-logo1 {
-                top: -100px;
-                right: 105px;
-            }
-            .menu-logo2 {
-                top: -600px;
-                left: 260px;
+            .menu-logo1, .menu-logo2 {
+                display: none;
             }
         }
         .menu-container {
-            margin: -500px 0 0 130px;
+            margin: 50px 10px;
         }
         .menu-logo-line {
             top: 0;
-            left: 80px; 
+            left: 10px; 
             padding-bottom: 100px;
             .menu-logo-lines {
                 background-color: #252424 !important;
