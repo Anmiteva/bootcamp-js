@@ -2,8 +2,8 @@ import React from 'react';
 import ControlledCarousel from './Slider/Carousel';
 import AnimatedDownArrow from './AnimatedDownArrow/AnimatedDownArrow';
 import AboutLayout from './AboutLayout/AboutLayout';
+import MenuHomeSection from './MenuHomeSection/MenuHomeSection';
 import Paralax from "./Paralax/Paralax";
-import Menu from './Menu/Menu';
 
 const Home = () => {
 	const aboutTitle = {
@@ -117,13 +117,124 @@ const Home = () => {
 		},
 	];
 
+	const menuList = [
+		{
+			type: 'Great Pasta',
+			background: '',
+			products: [
+				{
+					productId: '1331',
+					productName: 'filet',
+					productInfo: '7 oz. Center Cut 10 oz. Doublecut',
+					productPrice: '14.49',
+				},
+				{
+					productId: '43242',
+					productName: 'special filet',
+					productInfo: '10 oz. Greg Norman Ranch',
+					productPrice: '20.50',
+				},
+				{
+					productId: '345543',
+					productName: 'new york strip',
+					productInfo: '9 oz. Center Cut 12 oz. Double cut oz',
+					productPrice: '9.99',
+				},
+				{
+					productId: '556',
+					productName: 'porterhouse',
+					productInfo: '7 oz. Center Cut 10 oz.',
+					productPrice: '7.99',
+				},
+				{
+					productId: '6578',
+					productName: 'delmonico',
+					productInfo: '10 oz. Greg Norman Ranch',
+					productPrice: '17.99',
+				},
+			],
+		},
+		{
+			type: 'Our Pizzas',
+			background: '',
+			products: [
+				{
+					productId: '78976',
+					productName: 'filet',
+					productInfo: '7 oz. Center Cut 10 oz. Doublecut',
+					productPrice: '14.49',
+				},
+				{
+					productId: '244343',
+					productName: 'special filet',
+					productInfo: '10 oz. Greg Norman Ranch',
+					productPrice: '20.50',
+				},
+				{
+					productId: '54765',
+					productName: 'new york strip',
+					productInfo: '9 oz. Center Cut 12 oz. Double cut oz',
+					productPrice: '9.99',
+				},
+				{
+					productId: '3456',
+					productName: 'porterhouse',
+					productInfo: '7 oz. Center Cut 10 oz.',
+					productPrice: '7.99',
+				},
+				{
+					productId: '325234',
+					productName: 'delmonico',
+					productInfo: '10 oz. Greg Norman Ranch',
+					productPrice: '17.99',
+				},
+			],
+		},
+		{
+			type: 'Desserts',
+			background: '',
+			products: [
+				{
+					productId: '345',
+					productName: 'filet',
+					productInfo: '7 oz. Center Cut 10 oz. Doublecut',
+					productPrice: '14.49',
+				},
+				{
+					productId: '435634',
+					productName: 'special filet',
+					productInfo: '10 oz. Greg Norman Ranch',
+					productPrice: '20.50',
+				},
+				{
+					productId: '57447',
+					productName: 'new york strip',
+					productInfo: '9 oz. Center Cut 12 oz. Double cut oz',
+					productPrice: '9.99',
+				},
+				{
+					productId: '68678',
+					productName: 'porterhouse',
+					productInfo: '7 oz. Center Cut 10 oz.',
+					productPrice: '7.99',
+				},
+				{
+					productId: '435643',
+					productName: 'delmonico',
+					productInfo: '10 oz. Greg Norman Ranch',
+					productPrice: '17.99',
+				},
+			],
+		},
+	];
+
 	return (
 		<>
 			<ControlledCarousel indicators={false} controls={true} slideData={homeSlideData} />
 			<AnimatedDownArrow />
 			<AboutLayout aboutTitle={aboutTitle} aboutLayoutContent={aboutLayoutContent} />
+			<MenuHomeSection menu={menuList} />
 			<Paralax />
-			<Menu />
 		</>
 	);
 };
