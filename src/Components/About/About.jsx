@@ -14,6 +14,7 @@ const About = () => {
 			id: 'layout1',
 			ornament: true,
 			title: 'The History',
+			slide: true,
 			indicators: false,
 			controls: false,
 			textDecoration: {
@@ -52,6 +53,7 @@ const About = () => {
 			id: 'layout2',
 			ornament: false,
 			title: 'The History',
+			slide: true,
 			indicators: true,
 			controls: false,
 			textDecoration: {
@@ -91,10 +93,7 @@ const About = () => {
 	return (
 		<>
 			<div className='margin5'>
-				<AboutLayout
-					aboutTitle={aboutTitle}
-					aboutLayoutContent={aboutLayoutContent}
-				/>
+				<AboutLayout aboutTitle={aboutTitle} aboutLayoutContent={aboutLayoutContent} />
 			</div>
 		</>
 	);

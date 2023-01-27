@@ -139,13 +139,9 @@ const Menu = () => {
 		<Container>
 			<section className='complete-section'>
 				{menuList.map((section) => (
-					<div
-						key={section.type}
-						className='complete-menu'>
+					<div key={section.type} className='complete-menu'>
 						<Row>
-							<Col
-								md='10'
-								lg='12'>
+							<Col md='10' lg='12'>
 								<div className='complete-menu-line'>
 									<img
 										width={400}
@@ -166,31 +162,26 @@ const Menu = () => {
 							</Col>
 						</Row>
 						<p className='color'>{`Exclusive and delicious ${section.type}`}</p>
-						<img
-							width={450}
-							height={300}
-							src={section.background}
-							alt='alt img'
-						/>
-						<Row className='bottom'></Row>
-						<Col>
-							<div className='complete-menu-item'>
-								{section.products.map((product) => (
-									<MenuItem
-										key={product.productId}
-										productName={product.productName}
-										productInfo={product.productInfo}
-										productPrice={product.productPrice}
-									/>
-								))}
-							</div>
-						</Col>
+						<img width={450} height={300} src={section.background} alt='alt img' />
+						<Row className='bottom'>
+							<Col>
+								<div className='complete-menu-item'>
+									{section.products.map((product) => (
+										<MenuItem
+											key={product.productId}
+											productName={product.productName}
+											productInfo={product.productInfo}
+											productPrice={product.productPrice}
+										/>
+									))}
+								</div>
+							</Col>
+						</Row>
 					</div>
 				))}
 			</section>
 		</Container>
 	);
 };
-
 
 export default Menu;

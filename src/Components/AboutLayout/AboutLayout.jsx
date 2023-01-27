@@ -5,21 +5,18 @@ import TitleLayout from '../TitleLayout/TitleLayout';
 import './AboutLayout.scss';
 
 const AboutLayout = ({ aboutTitle, aboutLayoutContent }) => {
-    return (
-        <>
-			<TitleLayout
-				title={aboutTitle.title}
-				subTitle={aboutTitle.subTitle}
-			/>
+	return (
+		<>
+			<TitleLayout title={aboutTitle.title} subTitle={aboutTitle.subTitle} />
 			{aboutLayoutContent.map((content) => (
 				<AboutSectionLayout
 					key={content.id}
 					ornament={content.ornament}
 					title={content.title}
+					slide={content.slide}
 					indicators={content.indicators}
 					controls={content.controls}
-					aboutSlider={content.aboutSlider}
-					>
+					aboutSlider={content.aboutSlider}>
 					<TextDecoration
 						text={content.textDecoration.text}
 						coloredText={content.textDecoration.coloredText}
@@ -28,7 +25,7 @@ const AboutLayout = ({ aboutTitle, aboutLayoutContent }) => {
 				</AboutSectionLayout>
 			))}
 		</>
-    )
-}
+	);
+};
 
 export default AboutLayout;

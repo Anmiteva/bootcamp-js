@@ -4,7 +4,7 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Button from '../Button/Button';
 import MenuSection from '../MenuSection/MenuSection';
-import './MenuHomeSection.scss'
+import './MenuHomeSection.scss';
 
 const MenuHomeSection = ({ menu }) => {
 	return (
@@ -13,21 +13,9 @@ const MenuHomeSection = ({ menu }) => {
 				<Row>
 					<Col lg='12'>
 						<div className='menu-logo'>
-							<img
-								className='main-logo'
-								src='./menu_img/menu_logo.png'
-								alt='alt img'
-							/>
-							<img
-								className='menu-logo1'
-								src='./menu_img/menu_left.jpg'
-								alt='alt img'
-							/>
-							<img
-								className='menu-logo2'
-								src='./menu_img/menu_right.jpg'
-								alt='alt img'
-							/>
+							<img className='main-logo' src='./menu_img/menu_logo.png' alt='alt img' />
+							<img className='menu-logo1' src='./menu_img/menu_left.jpg' alt='alt img' />
+							<img className='menu-logo2' src='./menu_img/menu_right.jpg' alt='alt img' />
 						</div>
 					</Col>
 					<Col lg='12'>
@@ -37,14 +25,12 @@ const MenuHomeSection = ({ menu }) => {
 									type={section.type}
 									background={section.background}
 									products={section.products}
-                                    key={section.type}
+									key={section.type}
 								/>
 							))}
 						</div>
 					</Col>
-					<Col
-						md='6'
-						lg='12'>
+					<Col md='6' lg='12'>
 						<div className='menu-logo-line'>
 							<img
 								width={430}

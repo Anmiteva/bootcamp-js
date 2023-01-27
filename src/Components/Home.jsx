@@ -8,7 +8,8 @@ import Paralax from "./Paralax/Paralax";
 const Home = () => {
 	const aboutTitle = {
 		title: 'ABOUT US',
-		subTitle: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti at optio sit doloremque consequatur quod earum ad atque provident molestias!',
+		subTitle:
+			'Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti at optio sit doloremque consequatur quod earum ad atque provident molestias!',
 	};
 
 	const aboutLayoutContent = [
@@ -16,6 +17,7 @@ const Home = () => {
 			id: 'layout1',
 			ornament: true,
 			title: 'The History',
+			slide: true,
 			indicators: false,
 			controls: false,
 			textDecoration: {
@@ -25,35 +27,36 @@ const Home = () => {
 			},
 			aboutSlider: [
 				{
-						  id: 'aboutSlider1',
-						  image: './about01.jpg',
-						  intro: '',
-						  separator: '',
-						  title: '',
-						  description: '',
-						},
-						{
-						  id: 'aboutSlider2',
-						  image: './about02.jpg',
-						  intro: '',
-						  separator: '',
-						  title: '',
-						  description: '',
-						},
-						{
-						  id: 'aboutSlider3',
-						  image: './about03.jpg',
-						  intro: '',
-						  separator: '',
-						  title: '',
-						  description: '',
-						}
-			]
+					id: 'aboutSlider1',
+					image: './about01.jpg',
+					intro: '',
+					separator: '',
+					title: '',
+					description: '',
+				},
+				{
+					id: 'aboutSlider2',
+					image: './about02.jpg',
+					intro: '',
+					separator: '',
+					title: '',
+					description: '',
+				},
+				{
+					id: 'aboutSlider3',
+					image: './about03.jpg',
+					intro: '',
+					separator: '',
+					title: '',
+					description: '',
+				},
+			],
 		},
 		{
 			id: 'layout2',
 			ornament: false,
 			title: 'The History',
+			slide: true,
 			indicators: true,
 			controls: false,
 			textDecoration: {
@@ -63,30 +66,30 @@ const Home = () => {
 			},
 			aboutSlider: [
 				{
-						  id: 'aboutSlider4',
-						  image: './about04.jpg',
-						  intro: '',
-						  separator: '',
-						  title: '',
-						  description: '',
-						},
-						{
-						  id: 'aboutSlider5',
-						  image: './about05.jpg',
-						  intro: '',
-						  separator: '',
-						  title: '',
-						  description: '',
-						},
-						{
-						  id: 'aboutSlider6',
-						  image: './about06.jpg',
-						  intro: '',
-						  separator: '',
-						  title: '',
-						  description: '',
-						}
-			]
+					id: 'aboutSlider4',
+					image: './about04.jpg',
+					intro: '',
+					separator: '',
+					title: '',
+					description: '',
+				},
+				{
+					id: 'aboutSlider5',
+					image: './about05.jpg',
+					intro: '',
+					separator: '',
+					title: '',
+					description: '',
+				},
+				{
+					id: 'aboutSlider6',
+					image: './about06.jpg',
+					intro: '',
+					separator: '',
+					title: '',
+					description: '',
+				},
+			],
 		},
 	];
 
@@ -230,7 +233,11 @@ const Home = () => {
 
 	return (
 		<>
-			<ControlledCarousel indicators={false} controls={true} slideData={homeSlideData} />
+			<ControlledCarousel
+				indicators={false}
+				controls={true}
+				slideData={homeSlideData}
+			/>
 			<AnimatedDownArrow />
 			<AboutLayout aboutTitle={aboutTitle} aboutLayoutContent={aboutLayoutContent} />
 			<MenuHomeSection menu={menuList} />

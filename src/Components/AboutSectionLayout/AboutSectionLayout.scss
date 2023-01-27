@@ -15,11 +15,12 @@ div.about-section-layout {
 				font-family: $LobsterTwo-Italic;
 				text-align: center;
 				color: $the-history-title;
+				text-transform: capitalize;
 			}
 
 			p {
 				font-family: $Bitter-Regular;
-				color: $test;
+				color: $main-text;
 				text-align: left;
 				font-size: 14px;
 				font-weight: 300;
@@ -38,12 +39,9 @@ div.about-section-layout {
 		}
 	}
 }
-
-.displayNone {
-	display: none;
-}
-
-// ------------------- MEDIA ---------------
+// ----------------------------------------------------------
+// -------------------------- MEDIA -------------------------
+// ----------------------------------------------------------
 
 @media only screen and (max-width: 767px) {
 	div.about-section-layout {
@@ -51,7 +49,7 @@ div.about-section-layout {
 
 		div.row {
 			div.col-md {
-				gap: 20px;
+				gap: 5px;
 
 				h3 {
 					font-size: 30px;

@@ -8,11 +8,15 @@ div.about-title {
 				flex-direction: row;
 				justify-content: center;
 				align-items: center;
+				flex-wrap: nowrap;
+				gap: 15px;
 			}
 
 			h2 {
 				font-family: $Bitter-Regular;
-				color: $main-text;
+				color: #222;
+				text-transform: uppercase;
+				text-align: center;
 			}
 
 			div.about-sub-title {
@@ -22,7 +26,7 @@ div.about-title {
 
 				p {
 					font-family: $Bitter-Regular;
-					color: $test;
+					color: $main-text;
 					text-align: center;
 					font-size: 14px;
 					line-height: 1.6em;
