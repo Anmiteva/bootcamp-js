@@ -1,0 +1,122 @@
+div .App .circle {
+  position: relative;
+  display: block;
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  border: 2px solid rgba(255, 255, 255, 0.7);
+  align-items: center;
+  left: 48%;
+  bottom: 70px;
+}
+
+div .App .circle .arrow {
+  position: relative;
+  display: flex;
+  align-items: center;
+  bottom: 5px;
+  left: 25%;
+  color: white;
+  -webkit-animation: sdb05 1.5s infinite;
+          animation: sdb05 1.5s infinite;
+}
+
+@media only screen and (max-width: 768px) {
+  div .App .circle {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    left: 48%;
+    bottom: 70px;
+    width: 28px;
+    height: 28px;
+    top: -50px;
+  }
+  div .App .circle .arrow {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 1, 5%;
+    height: 81%;
+    left: 3%;
+    bottom: 9px;
+    left: -1.5%;
+    -webkit-animation: sdb06 1.5s infinite;
+            animation: sdb06 1.5s infinite;
+  }
+}
+@media only screen and (max-width: 600px) {
+  div .App .circle {
+    position: relative;
+    display: block;
+    justify-content: center;
+    left: 48%;
+    bottom: 70px;
+    width: 27px;
+    height: 27px;
+    top: -45px;
+  }
+  div .App .circle .arrow {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    left: 1.5%;
+    bottom: 7px;
+    width: 5, 5%;
+    height: 80%;
+    -webkit-animation: sdb06 1.5s infinite;
+            animation: sdb06 1.5s infinite;
+  }
+}
+@-webkit-keyframes sdb05 {
+  0% {
+    transform: translate(0, 0);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    transform: translate(0, 25px);
+    opacity: 0;
+  }
+}
+@keyframes sdb05 {
+  0% {
+    transform: translate(0, 0);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    transform: translate(0, 25px);
+    opacity: 0;
+  }
+}
+@-webkit-keyframes sdb06 {
+  0% {
+    transform: translate(0, 0);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    transform: translate(0, 17px);
+    opacity: 0;
+  }
+}
+@keyframes sdb06 {
+  0% {
+    transform: translate(0, 0);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    transform: translate(0, 17px);
+    opacity: 0;
+  }
+}/*# sourceMappingURL=AnimatedDownArrow.css.map */

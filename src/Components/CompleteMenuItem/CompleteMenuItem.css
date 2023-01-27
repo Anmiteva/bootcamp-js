@@ -53,4 +53,29 @@
   font-weight: normal;
   font-style: italic;
   font-display: swap;
-}/*# sourceMappingURL=App.css.map */
+}
+.complete-menu-item {
+  display: flex;
+  flex-wrap: wrap;
+}
+.complete-menu-item .complete-content-item {
+  min-width: 300px;
+}
+.complete-menu-item .complete-content-item h3 {
+  color: black;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+.complete-menu-item .complete-content-item h3, .complete-menu-item .complete-content-item p, .complete-menu-item .complete-content-item span {
+  margin: -5px 0;
+}
+.complete-menu-item .complete-content-item p, .complete-menu-item .complete-content-item span {
+  font-size: 13px;
+  display: inline;
+  padding-bottom: 20px;
+}
+.complete-menu-item .complete-content-item span {
+  float: right;
+  color: #C02533;
+  margin-top: 3px;
+}/*# sourceMappingURL=CompleteMenuItem.css.map */

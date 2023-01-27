@@ -53,4 +53,57 @@
   font-weight: normal;
   font-style: italic;
   font-display: swap;
-}/*# sourceMappingURL=App.css.map */
+}
+div.about-section-layout {
+  margin-bottom: 40px;
+}
+div.about-section-layout div.row div.col-md {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+div.about-section-layout div.row div.col-md h3 {
+  font-size: 44px;
+  font-family: "LobsterTwo-Italic";
+  text-align: center;
+  color: #2FA050;
+}
+div.about-section-layout div.row div.col-md p {
+  font-family: "Bitter-Regular";
+  color: #999999;
+  text-align: left;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 1.8em;
+  text-indent: 35px;
+}
+div.about-section-layout div.row div.col-md img.ornament {
+  width: 100px;
+  text-align: center;
+}
+div.about-section-layout div.row div.slider {
+  justify-content: center;
+}
+
+.displayNone {
+  display: none;
+}
+
+@media only screen and (max-width: 767px) {
+  div.about-section-layout {
+    margin-bottom: 0;
+  }
+  div.about-section-layout div.row div.col-md {
+    gap: 20px;
+  }
+  div.about-section-layout div.row div.col-md h3 {
+    font-size: 30px;
+  }
+  div.about-section-layout div.row div.col-md p {
+    font-size: 12px;
+    line-height: 1.8em;
+    padding: 5px;
+    box-sizing: border-box;
+  }
+}/*# sourceMappingURL=AboutSectionLayout.css.map */

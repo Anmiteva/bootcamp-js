@@ -53,4 +53,30 @@
   font-weight: normal;
   font-style: italic;
   font-display: swap;
-}/*# sourceMappingURL=App.css.map */
+}
+.menu-item {
+  display: flex;
+  flex-wrap: wrap;
+}
+.menu-item .content-item {
+  min-width: 265px;
+}
+.menu-item .content-item h3 {
+  color: black;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+.menu-item .content-item h3, .menu-item .content-item p {
+  margin: -5px 0;
+}
+.menu-item .content-item p, .menu-item .content-item span {
+  font-size: 13px;
+  padding-bottom: 20px;
+  display: inline-block;
+}
+.menu-item .content-item span {
+  float: right;
+  color: #C02533;
+  margin-top: 2px;
+  margin-left: 20px;
+}/*# sourceMappingURL=MenuItemContent.css.map */

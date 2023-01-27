@@ -47,6 +47,13 @@
   font-style: normal;
   font-display: swap;
 }
+@font-face {
+  font-family: "Sofia Sans Extra Condensed";
+  src: url("./fonts/SofiaSansExtraCondensed-Thin.woff2") format("woff2"), url("./fonts/SofiaSansExtraCondensed-Thin.woff") format("woff");
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
 .formInput input {
   padding: 10px;
   background-color: rgb(56, 48, 21);
@@ -81,12 +88,26 @@
   justify-content: flex-start;
   align-items: flex-start;
   text-align: start;
+  height: 175px;
 }
-.formInput:last-child input {
-  width: 350px;
-  height: 172px;
-  padding-bottom: 140px;
+.formInput:last-child textarea {
+  width: 100%;
+  height: 175px;
+  background-color: rgb(56, 48, 21);
+  padding: 10px;
+  border: none;
+  resize: none;
+  color: white;
 }
 .formInput:last-child ::-webkit-input-placeholder {
   color: rgb(228, 228, 225);
+}
+
+@media only screen and (max-width: 375px) {
+  .formInput input {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 230px;
+  }
 }/*# sourceMappingURL=FormInput.css.map */

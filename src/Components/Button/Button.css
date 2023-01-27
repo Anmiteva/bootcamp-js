@@ -53,4 +53,17 @@
   font-weight: normal;
   font-style: italic;
   font-display: swap;
-}/*# sourceMappingURL=App.css.map */
+}
+.menu-button {
+  padding: 10px;
+  font-size: 1em;
+  cursor: pointer;
+  text-decoration: none;
+  background-color: transparent;
+  border: 2px solid #2FA050;
+  color: #2FA050;
+}
+
+.menu-button, .menu-logo-line1, .menu-logo-line2 {
+  margin-top: 50px;
+}/*# sourceMappingURL=Button.css.map */

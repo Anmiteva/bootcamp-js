@@ -3,6 +3,7 @@ import './App.scss';
 import Navigation from './Components/Navigation/Navigation';
 import Layout from './Components/Layout';
 import ContactForm from './Components/Contact_Form/ContactForm';
+import LocalizationMap from './Components/LocalizationMap/LocalizationMap';
 
 function App() {
 	
@@ -11,6 +12,7 @@ function App() {
 			<Navigation />
 			<Layout />
 			<ContactForm />
+			<LocalizationMap />
 		</div>
 	);
 }

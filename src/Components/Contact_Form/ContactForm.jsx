@@ -81,7 +81,9 @@ const ContactForm = () => {
 				/>
 			</div>
 
-			<p>ул. „Димитър Икономов“ 19, 9010 Левски, Варна</p>
+			<p 
+			onClick={()=>{document.getElementById('localizationMap').scrollIntoView()}}
+			>ул. „Димитър Икономов“ 19, 9010 Левски, Варна</p>
 
 			<form onSubmit={handleSubmit}>
 				{inputs.map((input) => (

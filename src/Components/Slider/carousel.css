@@ -1,0 +1,191 @@
+@font-face {
+  font-family: "Bitter-Italic";
+  src: url("./fonts/Bitter-Italic.woff2") format("woff2"), url("./fonts/Bitter-Italic.woff") format("woff");
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "LobsterTwo-Bold";
+  src: url("./fonts/LobsterTwo-Bold.woff2") format("woff2"), url("./fonts/LobsterTwo-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Bitter-Bold";
+  src: url("./fonts/Bitter-Bold.woff2") format("woff2"), url("./fonts/Bitter-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Bitter-Regular";
+  src: url("./fonts/Bitter-Regular.woff2") format("woff2"), url("./fonts/Bitter-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "LobsterTwo-BoldItalic";
+  src: url("./fonts/LobsterTwo-BoldItalic.woff2") format("woff2"), url("./fonts/LobsterTwo-BoldItalic.woff") format("woff");
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "LobsterTwo-Italic";
+  src: url("./fonts/LobsterTwo-Italic.woff2") format("woff2"), url("./fonts/LobsterTwo-Italic.woff") format("woff");
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "LobsterTwo-Regular";
+  src: url("./fonts/LobsterTwo-Regular.woff2") format("woff2"), url("./fonts/LobsterTwo-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Sofia Sans Extra Condensed";
+  src: url("./fonts/SofiaSansExtraCondensed-Thin.woff2") format("woff2"), url("./fonts/SofiaSansExtraCondensed-Thin.woff") format("woff");
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+.Carousel {
+  height: 100vh;
+  display: block;
+}
+
+.carousel-inner > .item > img {
+  min-height: 300px;
+  max-height: 300px;
+  width: 100%;
+}
+
+.img > .d-block w-100 {
+  position: absolute;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.carousel-indicators {
+  margin-bottom: -35px;
+  gap: 7px;
+}
+.carousel-indicators [data-bs-target] {
+  box-sizing: content-box;
+  flex: 0 1 auto;
+  width: 10px;
+  height: 10px;
+  text-indent: -999px;
+  cursor: pointer;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 2px solid #c8c7c5;
+  opacity: 0.5;
+  transition: opacity 0.6s ease;
+  border-radius: 100%;
+}
+.carousel-indicators [data-bs-target].active {
+  border-color: #c8c7c5;
+  background-color: #c8c7c5;
+}
+
+.intro {
+  padding-bottom: -10px;
+  margin: 20px;
+  width: 240px;
+  height: 200px;
+}
+
+.slide-title {
+  font-size: 60px;
+  text-transform: uppercase;
+  margin-bottom: -10px;
+  padding: 20px;
+  font-weight: bold;
+  text-align: center;
+  font-family: "Sofia Sans Extra Condensed", sans-serif;
+}
+
+.description {
+  position: relative;
+  top: 10px;
+}
+
+.description {
+  padding-bottom: 50px;
+  margin-top: 20px;
+}
+
+img.separator {
+  width: 130px;
+}
+
+@media only screen and (max-width: 600px) {
+  .carousel-caption {
+    margin-top: -50px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  img.intro {
+    margin-top: 5px;
+    width: 80px;
+    height: 70px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .slide-title {
+    font-size: 25px;
+    margin-top: -40px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .separator {
+    width: 100px;
+    margin-top: -30px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  p.description {
+    font-size: 12px;
+    margin-top: -10px;
+  }
+}
+/* Small devices (portrait tablets and large phones, 600px and up) */
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (max-width: 992px) {
+  .carousel-item {
+    display: flex;
+    justify-content: center;
+  }
+}
+@media only screen and (max-width: 992px) {
+  .description {
+    padding-bottom: 50px;
+    margin-top: 20px;
+  }
+}
+@media only screen and (max-width: 992px) {
+  .intro {
+    width: 150px;
+    height: 100px;
+    margin: 20px;
+  }
+}
+@media only screen and (max-width: 992px) {
+  .carousel-caption {
+    position: absolute;
+    top: 55%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transform: translateY(-32%);
+    text-align: center;
+    max-height: 100vh;
+  }
+}/*# sourceMappingURL=carousel.css.map */

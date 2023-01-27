@@ -53,4 +53,15 @@
   font-weight: normal;
   font-style: italic;
   font-display: swap;
-}/*# sourceMappingURL=App.css.map */
+}
+.localizationMap {
+  height: 20rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.localizationMap iframe {
+  width: 100%;
+  height: 20rem;
+}/*# sourceMappingURL=LocalizationMap.css.map */

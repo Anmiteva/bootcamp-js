@@ -47,15 +47,26 @@
   font-style: normal;
   font-display: swap;
 }
+@font-face {
+  font-family: "Sofia Sans Extra Condensed";
+  src: url("./fonts/SofiaSansExtraCondensed-Thin.woff2") format("woff2"), url("./fonts/SofiaSansExtraCondensed-Thin.woff") format("woff");
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
 header {
-  position: -webkit-sticky;
-  position: sticky;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
   height: 4rem;
   background-color: rgba(0, 0, 0, 0.7);
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 0 4rem;
+  z-index: 10;
 }
 header .logo img {
   width: 5rem;
@@ -106,7 +117,7 @@ header .nav-btn {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: rgb(76, 76, 76);
+    background-color: rgba(0, 0, 0, 0.7);
     transform: translateY(100vh);
   }
   header .responsive-nav {

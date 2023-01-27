@@ -1,0 +1,174 @@
+@font-face {
+  font-family: "Bitter-Italic";
+  src: url("./fonts/Bitter-Italic.woff2") format("woff2"), url("./fonts/Bitter-Italic.woff") format("woff");
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "LobsterTwo-Bold";
+  src: url("./fonts/LobsterTwo-Bold.woff2") format("woff2"), url("./fonts/LobsterTwo-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Bitter-Bold";
+  src: url("./fonts/Bitter-Bold.woff2") format("woff2"), url("./fonts/Bitter-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Bitter-Regular";
+  src: url("./fonts/Bitter-Regular.woff2") format("woff2"), url("./fonts/Bitter-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "LobsterTwo-BoldItalic";
+  src: url("./fonts/LobsterTwo-BoldItalic.woff2") format("woff2"), url("./fonts/LobsterTwo-BoldItalic.woff") format("woff");
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "LobsterTwo-Italic";
+  src: url("./fonts/LobsterTwo-Italic.woff2") format("woff2"), url("./fonts/LobsterTwo-Italic.woff") format("woff");
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "LobsterTwo-Regular";
+  src: url("./fonts/LobsterTwo-Regular.woff2") format("woff2"), url("./fonts/LobsterTwo-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Sofia Sans Extra Condensed";
+  src: url("./fonts/SofiaSansExtraCondensed-Thin.woff2") format("woff2"), url("./fonts/SofiaSansExtraCondensed-Thin.woff") format("woff");
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+.container-paralax {
+  min-height: 335px;
+  margin-bottom: 80px;
+  background: url(./paralax_img/opening_hours.jpg) no-repeat;
+  background-position: center -300px;
+  background-attachment: fixed;
+  background-size: cover;
+}
+.container-paralax .content-title {
+  color: white;
+  text-align: center;
+}
+.container-paralax .content-title .timetable {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container-paralax .content-title .timetable .opening-hours {
+  font-size: 1.5em;
+}
+.container-paralax .content-title .red {
+  color: red;
+  font-size: 13px;
+  margin-top: -30px;
+  margin-left: 10px;
+  font-style: italic;
+}
+.container-paralax .content {
+  color: white;
+  max-width: 400px;
+  margin: -7px auto;
+  align-items: center;
+  text-align: center;
+  display: flex;
+}
+.container-paralax .content .description {
+  color: red;
+  font-size: 2em;
+  line-height: 30px;
+  font-family: "LobsterTwo-Italic";
+}
+.container-paralax .content .description .span {
+  color: white;
+  font-family: initial;
+}
+.container-paralax .content .separator {
+  max-width: 10px;
+  max-height: 200px;
+}
+.container-paralax .reservation {
+  color: white;
+  font-size: 10px;
+  margin-top: 15px;
+  text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+  .container-paralax {
+    min-width: 100vw;
+    font-size: 15px;
+    min-height: 0;
+    background-position: center -135px;
+  }
+  .container-paralax .content-title .red {
+    margin-bottom: 20px;
+    font-size: 15px;
+  }
+  .container-paralax .content {
+    margin: 10px 0 0 30%;
+    font-size: 10px;
+    max-height: 50px;
+  }
+  .container-paralax .content .description .span {
+    position: relative;
+    top: -15px;
+  }
+  .container-paralax .content .separator {
+    max-height: 100px;
+    max-width: 5px;
+    margin: 0 10px;
+  }
+  .container-paralax .reservation {
+    font-size: 10px;
+    margin-top: 30px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .container-paralax {
+    margin-top: 50px;
+    margin-left: 7px;
+    background-position: center 200px;
+  }
+  .container-paralax .content-title {
+    margin-top: 10px;
+  }
+  .container-paralax .content-title .red {
+    font-size: 12px;
+    padding-top: 5px;
+  }
+  .container-paralax .decor {
+    max-width: 50px;
+    margin-bottom: 10px;
+  }
+  .container-paralax .timetable {
+    padding-bottom: 10px;
+    font-size: 12px;
+  }
+  .container-paralax .content {
+    margin: 5px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 7px;
+  }
+  .container-paralax .content .separator {
+    margin-top: 5px;
+  }
+}/*# sourceMappingURL=Paralax.css.map */

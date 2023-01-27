@@ -53,4 +53,8 @@
   font-weight: normal;
   font-style: italic;
   font-display: swap;
-}/*# sourceMappingURL=App.css.map */
+}
+.decoration {
+  font-weight: bold;
+  color: #DF0402;
+}/*# sourceMappingURL=TextDecoration.css.map */

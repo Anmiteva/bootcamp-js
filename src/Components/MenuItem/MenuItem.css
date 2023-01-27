@@ -53,4 +53,31 @@
   font-weight: normal;
   font-style: italic;
   font-display: swap;
-}/*# sourceMappingURL=App.css.map */
+}
+.menu-section {
+  float: left;
+  margin-left: 8%;
+}
+.menu-section .container-section {
+  margin: 0 -30px;
+}
+.menu-section .container-section h2 {
+  font-size: 20px;
+  text-align: center;
+  padding-bottom: 20px;
+  color: #2FA050;
+}
+
+@media screen and (max-width: 768px) {
+  .menu-section .container-section {
+    margin: 20px -30px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .menu-section {
+    font-size: 20px;
+  }
+  .menu-section .container-section {
+    margin: 20px -100px;
+  }
+}/*# sourceMappingURL=MenuItem.css.map */
