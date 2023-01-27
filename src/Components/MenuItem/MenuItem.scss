@@ -1,37 +1,47 @@
-@import "../../constants.scss";
+@import '../../constants.scss';
 
-.menu-item {
-    display: flex;
-    flex-wrap: wrap;
-    .content-item {
-        min-width: 265px;
-        h3 {
-            color: black;
-            font-size: 16px;
-            text-transform: uppercase;
-        }
-        h3, p {
-            margin: -5px 0; 
-        }
-        p, span {
-            font-size: 13px;
-            padding-bottom: 20px;
-            display: inline-block;
-        }
-        span {
-            float: right;
-            color: $prices;
-            margin-top: 2px;
-            margin-left: 20px;
-        }
-    }
+div.content-item {
+	padding: 0 9px;
+	box-sizing: border-box;
+	h3 {
+		color: black;
+		font-family: $Bitter-Bold;
+		font-size: 16px;
+		text-transform: uppercase;
+	}
+	div.content-info {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: nowrap;
+		justify-content: space-between;
+		gap: 15px;
+		box-sizing: border-box;
+
+		p,
+		span {
+			font-family: $Bitter-Regular;
+			font-size: 13px;
+			display: inline-block;
+		}
+		p {
+			color: $main-text;
+		}
+		span {
+			color: $prices;
+		}
+	}
 }
 
 @media screen and (max-width: 576px) {
-    .menu-section {
-        font-size: 20px;
-        .container-section {
-            margin: 20px -100px;
-        }
-    }
+	div.content-item {
+		h3 {
+			font-size: 14px;
+		}
+		div.content-info {
+			p,
+			span {
+				font-size: 11px;
+			}
+		}
+	}
 }

@@ -10,43 +10,27 @@ const MenuHomeSection = ({ menu }) => {
 	return (
 		<div className='main-menu'>
 			<Container>
-				<Row>
+				<Row className='menu-home-section-logo'>
 					<Col lg='12'>
 						<div className='menu-logo'>
 							<img className='main-logo' src='./menu_img/menu_logo.png' alt='alt img' />
-							<img className='menu-logo1' src='./menu_img/menu_left.jpg' alt='alt img' />
-							<img className='menu-logo2' src='./menu_img/menu_right.jpg' alt='alt img' />
 						</div>
 					</Col>
+				</Row>
+				<Row className='menu-home-section-content'>
+					{menu.map((section) => (
+						<MenuSection
+							type={section.type}
+							background={section.background}
+							products={section.products}
+							key={section.type}
+						/>
+					))}
+				</Row>
+				<Row>
 					<Col lg='12'>
-						<div className='menu-container'>
-							{menu.map((section) => (
-								<MenuSection
-									type={section.type}
-									background={section.background}
-									products={section.products}
-									key={section.type}
-								/>
-							))}
-						</div>
-					</Col>
-					<Col md='6' lg='12'>
 						<div className='menu-logo-line'>
-							<img
-								width={430}
-								height={1}
-								className='menu-logo-lines'
-								src='./menu_img/menu_title_line.png'
-								alt='alt img'
-							/>
 							<Button text={'view complete menu'} />
-							<img
-								width={430}
-								height={1}
-								className='menu-logo-lines'
-								src='./menu_img/menu_title_line.png'
-								alt='alt img'
-							/>
 						</div>
 					</Col>
 				</Row>

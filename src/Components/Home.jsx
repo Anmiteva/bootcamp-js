@@ -3,7 +3,7 @@ import ControlledCarousel from './Slider/Carousel';
 import AnimatedDownArrow from './AnimatedDownArrow/AnimatedDownArrow';
 import AboutLayout from './AboutLayout/AboutLayout';
 import MenuHomeSection from './MenuHomeSection/MenuHomeSection';
-import Paralax from "./Paralax/Paralax";
+import Paralax from './Paralax/Paralax';
 
 const Home = () => {
 	const aboutTitle = {
@@ -233,11 +233,7 @@ const Home = () => {
 
 	return (
 		<>
-			<ControlledCarousel
-				indicators={false}
-				controls={true}
-				slideData={homeSlideData}
-			/>
+			<ControlledCarousel indicators={false} controls={true} slideData={homeSlideData} />
 			<AnimatedDownArrow />
 			<AboutLayout aboutTitle={aboutTitle} aboutLayoutContent={aboutLayoutContent} />
 			<MenuHomeSection menu={menuList} />

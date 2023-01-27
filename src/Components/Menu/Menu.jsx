@@ -9,7 +9,7 @@ const Menu = () => {
 	const menuList = [
 		{
 			type: 'Desserts',
-			background: './menu_img/desserts.png',
+			background: 1,
 			products: [
 				{
 					productId: '111',
@@ -51,7 +51,7 @@ const Menu = () => {
 		},
 		{
 			type: 'Pizzas',
-			background: './menu_img/pizzas.png',
+			background: 2,
 			products: [
 				{
 					productId: '1231',
@@ -117,18 +117,30 @@ const Menu = () => {
 		},
 		{
 			type: 'Salads',
-			background: './menu_img/salads.png',
+			background: 3,
 			products: [
 				{
 					productId: '68658',
 					productName: 'filet',
-					productInfo: '7 oz. Center Cut 10 oz. Doublecut',
+					productInfo: 'Different swiss cheese and Secret sauce',
 					productPrice: '14.49',
 				},
 				{
 					productId: '56785',
 					productName: 'special filet',
-					productInfo: '10 oz. Greg Norman Ranch',
+					productInfo: 'Different swiss cheese and Secret sauce',
+					productPrice: '20.50',
+				},
+				{
+					productId: '6865843',
+					productName: 'filet',
+					productInfo: 'Different swiss cheese and Secret sauce',
+					productPrice: '14.49',
+				},
+				{
+					productId: '56785435',
+					productName: 'special filet',
+					productInfo: 'Different swiss cheese and Secret sauce',
 					productPrice: '20.50',
 				},
 			],
@@ -136,50 +148,31 @@ const Menu = () => {
 	];
 
 	return (
-		<Container>
-			<section className='complete-section'>
-				{menuList.map((section) => (
-					<div key={section.type} className='complete-menu'>
-						<Row>
-							<Col md='10' lg='12'>
-								<div className='complete-menu-line'>
-									<img
-										width={400}
-										height={1}
-										className='complete-menu-lines'
-										src='./menu_img/menu_title_line.png'
-										alt='alt img'
-									/>
-									<h2>{section.type}</h2>
-									<img
-										width={400}
-										height={1}
-										className='complete-menu-lines'
-										src='./menu_img/menu_title_line.png'
-										alt='alt img'
+		<Container className='complete-menu-section'>
+			{menuList.map((section) => (
+				<div key={section.type} className='menu-section'>
+					<Row className='menu-title'>
+						<Col>
+							<h2>{section.type}</h2>
+							<p>{`Exclusive and delicious ${section.type}`}</p>
+						</Col>
+					</Row>
+					<Row className={`menu-background-${section.background}`}></Row>
+					<Row className='menu-content'>
+						<Col>
+							{section.products.map((product) => (
+								<div className='menu-item' key={product.productId}>
+									<MenuItem
+										productName={product.productName}
+										productInfo={product.productInfo}
+										productPrice={product.productPrice}
 									/>
 								</div>
-							</Col>
-						</Row>
-						<p className='color'>{`Exclusive and delicious ${section.type}`}</p>
-						<img width={450} height={300} src={section.background} alt='alt img' />
-						<Row className='bottom'>
-							<Col>
-								<div className='complete-menu-item'>
-									{section.products.map((product) => (
-										<MenuItem
-											key={product.productId}
-											productName={product.productName}
-											productInfo={product.productInfo}
-											productPrice={product.productPrice}
-										/>
-									))}
-								</div>
-							</Col>
-						</Row>
-					</div>
-				))}
-			</section>
+							))}
+						</Col>
+					</Row>
+				</div>
+			))}
 		</Container>
 	);
 };

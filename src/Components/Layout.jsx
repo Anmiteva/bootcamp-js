@@ -4,7 +4,6 @@ import Home from './Home';
 import About from './About/About';
 import Menu from './Menu/Menu';
 
-
 const Layout = () => {
 	return (
 		<Routes>

@@ -1,23 +1,16 @@
-@import "../../constants.scss";
+@import '../../constants.scss';
 
 .menu-section {
-    float: left;
-    margin-left: 8%;   
-    .container-section {
-        margin: 0 -30px;
-        h2 {
-            font-size: 20px;
-            text-align: center;
-            padding-bottom: 20px;
-            color: $the-history-title;
-        }
-    }
-}
-
-@media screen and (max-width: 768px) {
-    .menu-section {
-        .container-section {
-            margin: 20px -30px;
-        }
-    }
+	padding: 5px;
+	.container-section {
+		display: flex;
+		flex-direction: column;
+		flex-wrap: nowrap;
+		h2 {
+			font-size: 20px;
+			text-align: center;
+			padding-bottom: 20px;
+			color: $the-history-title;
+		}
+	}
 }
