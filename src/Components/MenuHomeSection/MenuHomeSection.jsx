@@ -28,10 +28,8 @@ const MenuHomeSection = ({ menu }) => {
 					))}
 				</Row>
 				<Row>
-					<Col lg='12'>
-						<div className='menu-logo-line'>
-							<Button text={'view complete menu'} />
-						</div>
+					<Col lg='12' className='menu-logo-line'>
+						<Button text={'view complete menu'} />
 					</Col>
 				</Row>
 			</Container>

@@ -25,7 +25,7 @@ const About = () => {
 			aboutSlider: [
 				{
 					id: 'aboutSlider1',
-					image: './about01.jpg',
+					background: './about01.jpg',
 					intro: '',
 					separator: '',
 					title: '',
@@ -33,7 +33,7 @@ const About = () => {
 				},
 				{
 					id: 'aboutSlider2',
-					image: './about02.jpg',
+					background: './about02.jpg',
 					intro: '',
 					separator: '',
 					title: '',
@@ -41,7 +41,7 @@ const About = () => {
 				},
 				{
 					id: 'aboutSlider3',
-					image: './about03.jpg',
+					background: './about03.jpg',
 					intro: '',
 					separator: '',
 					title: '',
@@ -64,7 +64,7 @@ const About = () => {
 			aboutSlider: [
 				{
 					id: 'aboutSlider4',
-					image: './about04.jpg',
+					background: './about04.jpg',
 					intro: '',
 					separator: '',
 					title: '',
@@ -72,7 +72,7 @@ const About = () => {
 				},
 				{
 					id: 'aboutSlider5',
-					image: './about05.jpg',
+					background: './about05.jpg',
 					intro: '',
 					separator: '',
 					title: '',
@@ -80,7 +80,7 @@ const About = () => {
 				},
 				{
 					id: 'aboutSlider6',
-					image: './about06.jpg',
+					background: './about06.jpg',
 					intro: '',
 					separator: '',
 					title: '',

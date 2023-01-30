@@ -45,22 +45,14 @@ div.complete-menu-section {
 			}
 		}
 
-		div[class^='menu-background-'] {
+		div.menu-background {
 			width: 100%;
 			background-repeat: no-repeat;
 			background-position: center;
 			background-size: auto 70%;
 			min-height: 350px;
 		}
-		div.menu-background-1 {
-			background-image: url('../../../public/menu_img/desserts.png');
-		}
-		div.menu-background-2 {
-			background-image: url('../../../public/menu_img/pizzas.png');
-		}
-		div.menu-background-3 {
-			background-image: url('../../../public/menu_img/salads.png');
-		}
+
 		div.menu-content {
 			div.col {
 				display: flex;

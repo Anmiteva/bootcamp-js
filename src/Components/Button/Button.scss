@@ -1,15 +1,43 @@
-@import "../../constants.scss";
+@import '../../constants.scss';
 
-.menu-button {
-    padding: 10px;
-    font-size: 1em;
-    cursor: pointer;
-    text-decoration: none;
-    background-color: transparent;
-    border: 2px solid $the-history-title;
-    color: $the-history-title;
+a.menu-button {
+	text-decoration: none;
+	box-sizing: border-box;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	align-items: center;
+	justify-content: center;
+	cursor: default;
+	span.button-text {
+		padding: 10px;
+		border: 2px solid $the-history-title;
+		color: $the-history-title;
+		font-family: $Bitter-Regular;
+		font-size: 1em;
+		cursor: pointer;
+		transition: 0.3s;
+	}
+	span.button-text:hover {
+		color: #fff;
+		background-color: $the-history-title;
+	}
 }
 
-.menu-button, .menu-logo-line1, .menu-logo-line2 {
-    margin-top: 50px;
+a.menu-button:before,
+a.menu-button:after {
+	display: block;
+	height: 2px;
+	background-color: #eee;
+	width: 30%;
+	margin: 0 20px;
+	content: ' ';
+}
+
+@media screen and (max-width: 576px) {
+	a.menu-button {
+		span.button-text {
+			font-size: 0.8em;
+		}
+	}
 }

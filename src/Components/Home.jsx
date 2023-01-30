@@ -28,7 +28,7 @@ const Home = () => {
 			aboutSlider: [
 				{
 					id: 'aboutSlider1',
-					image: './about01.jpg',
+					background: './about01.jpg',
 					intro: '',
 					separator: '',
 					title: '',
@@ -36,7 +36,7 @@ const Home = () => {
 				},
 				{
 					id: 'aboutSlider2',
-					image: './about02.jpg',
+					background: './about02.jpg',
 					intro: '',
 					separator: '',
 					title: '',
@@ -44,7 +44,7 @@ const Home = () => {
 				},
 				{
 					id: 'aboutSlider3',
-					image: './about03.jpg',
+					background: './about03.jpg',
 					intro: '',
 					separator: '',
 					title: '',
@@ -67,7 +67,7 @@ const Home = () => {
 			aboutSlider: [
 				{
 					id: 'aboutSlider4',
-					image: './about04.jpg',
+					background: './about04.jpg',
 					intro: '',
 					separator: '',
 					title: '',
@@ -75,7 +75,7 @@ const Home = () => {
 				},
 				{
 					id: 'aboutSlider5',
-					image: './about05.jpg',
+					background: './about05.jpg',
 					intro: '',
 					separator: '',
 					title: '',
@@ -83,7 +83,7 @@ const Home = () => {
 				},
 				{
 					id: 'aboutSlider6',
-					image: './about06.jpg',
+					background: './about06.jpg',
 					intro: '',
 					separator: '',
 					title: '',
@@ -96,7 +96,7 @@ const Home = () => {
 	let homeSlideData = [
 		{
 			id: 1,
-			image: './01.jpg',
+			background: './01.jpg',
 			intro: './logo_intro_red.png',
 			separator: './slide-separator.png',
 			title: 'italian style restaurant',
@@ -104,7 +104,7 @@ const Home = () => {
 		},
 		{
 			id: 2,
-			image: './02.jpg',
+			background: './slider/02.jpg',
 			intro: './logo_intro_red.png',
 			separator: './slide-separator.png',
 			title: 'welcome to restaurant',
@@ -112,7 +112,7 @@ const Home = () => {
 		},
 		{
 			id: 3,
-			image: './03.jpg',
+			background: './slider/03.jpg',
 			intro: './logo_intro_red.png',
 			separator: './slide-separator.png',
 			title: 'elexir exclusively foood',
@@ -236,8 +236,8 @@ const Home = () => {
 			<ControlledCarousel indicators={false} controls={true} slideData={homeSlideData} />
 			<AnimatedDownArrow />
 			<AboutLayout aboutTitle={aboutTitle} aboutLayoutContent={aboutLayoutContent} />
-			<MenuHomeSection menu={menuList} />
 			<Paralax />
+			<MenuHomeSection menu={menuList} />
 		</>
 	);
 };

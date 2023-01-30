@@ -9,7 +9,7 @@ const Menu = () => {
 	const menuList = [
 		{
 			type: 'Desserts',
-			background: 1,
+			background: './menu_img/desserts.png',
 			products: [
 				{
 					productId: '111',
@@ -51,7 +51,7 @@ const Menu = () => {
 		},
 		{
 			type: 'Pizzas',
-			background: 2,
+			background: './menu_img/pizzas.png',
 			products: [
 				{
 					productId: '1231',
@@ -117,7 +117,7 @@ const Menu = () => {
 		},
 		{
 			type: 'Salads',
-			background: 3,
+			background: './menu_img/salads.png',
 			products: [
 				{
 					productId: '68658',
@@ -157,7 +157,7 @@ const Menu = () => {
 							<p>{`Exclusive and delicious ${section.type}`}</p>
 						</Col>
 					</Row>
-					<Row className={`menu-background-${section.background}`}></Row>
+					<Row className='menu-background' style={{ backgroundImage: `url(${section.background})` }}></Row>
 					<Row className='menu-content'>
 						<Col>
 							{section.products.map((product) => (
