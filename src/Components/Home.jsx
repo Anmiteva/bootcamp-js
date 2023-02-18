@@ -4,6 +4,8 @@ import AnimatedDownArrow from './AnimatedDownArrow/AnimatedDownArrow';
 import AboutLayout from './AboutLayout/AboutLayout';
 import MenuHomeSection from './MenuHomeSection/MenuHomeSection';
 import Paralax from './Paralax/Paralax';
+import ContactForm from './Contact_Form/ContactForm';
+import LocalizationMap from './LocalizationMap/LocalizationMap';
 
 const Home = () => {
 	const aboutTitle = {
@@ -238,6 +240,8 @@ const Home = () => {
 			<AboutLayout aboutTitle={aboutTitle} aboutLayoutContent={aboutLayoutContent} />
 			<Paralax />
 			<MenuHomeSection menu={menuList} />
+			<ContactForm />
+			<LocalizationMap />
 		</>
 	);
 };

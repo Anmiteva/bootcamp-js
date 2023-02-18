@@ -40,6 +40,14 @@ const Navigation = () => {
 					<li>
 						<Link to='/location'>Location</Link>
 					</li>
+					<li>
+						<Link to='/login' path='Login'>
+							<img 
+								src="./user.png" 
+								alt="user"
+								title="Log in!" />
+						</Link>
+					</li>
 				</ul>
 			</div>
 			<button 

@@ -27,16 +27,21 @@ header {
 			list-style: none;
 			margin: 0;
 			padding: 0;
+			align-items: center;
 
 			li {
 				text-transform: uppercase;
+
+				img{
+					width: 1.7rem;
+				}
 
 				a {
 					text-decoration: none;
 					color: $pure-white;
 					font-family: $Bitter-Regular;
 					font-size: 0.8rem;
-					transition: all 0.3s;
+					// transition: all 0.1s;
 
 					&:hover {
 						color: $call-of-reservations;
