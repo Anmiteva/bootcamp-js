@@ -82,7 +82,7 @@ const Login = () => {
                     id="remember-me" /> Remember me!
                 </span>
 
-                    <p>Forgot password?</p>
+                    <p><a href="/ResetForm">Forgot password?</a></p>
 
                 </div>
 					<span className='account'>Don't have an account? <a href="/sign-up">Sign up</a></span>

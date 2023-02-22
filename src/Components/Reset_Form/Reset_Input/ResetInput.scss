@@ -1,0 +1,49 @@
+@import '../../../constants.scss';
+
+.resetInput {
+	input {
+		padding: 10px;
+		// margin: 5px;
+		background-color: $form-input;
+		color: $pure-white;
+		width: 400px;
+		border: none;
+		border-radius: 3px;
+	}
+
+	::-webkit-input-placeholder {
+		color: $contact-form-h2;
+	}
+
+	label {
+		display: none;
+	}
+
+	span {
+		font-size: 10px;
+		padding: 3px;
+		color: $call-of-reservations;
+		display: none;
+		word-wrap: break-word;
+	}
+
+	input:invalid[focused='true'] {
+		border: 1px solid red;
+	}
+
+	input:invalid[focused='true'] ~ span {
+		display: block;
+	}
+}
+
+@media only screen and (max-width: 475px) {
+	.resetInput {
+		input {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			width: 150px;
+			font-size: 0.8rem;
+		}
+	}
+}
