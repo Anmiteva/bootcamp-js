@@ -1,0 +1,25 @@
+.social-nets {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	background: rgb(42,34,12);
+	padding: 35px 50px;
+	gap: 5px;
+
+	a {
+		display: flex;
+        background-color: #3c2e14;
+        padding: 8px;
+        border-radius: 50%;		
+
+		    .social-icon {
+		    	color:white;
+		    	height: 15px;
+		    	width: 15px;
+                &:hover {
+                    opacity: 0.8;
+                }
+		    }
+
+		}
+}

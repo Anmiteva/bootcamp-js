@@ -1,0 +1,104 @@
+@import '../../constants.scss';
+
+div.testimonials-section {
+	background-image: url('../../../public/testimonials/testimonials.jpg');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-attachment: fixed;
+	background-size: cover;
+
+	div.active.carousel-item {
+		height: 150px;
+		width: 100%;
+	}
+
+	div.container {
+		div.pizza-logo {
+			div.col {
+				display: flex;
+				justify-content: center;
+				img.testimonials-logo {
+					height: 50%;
+					margin-top: 20px;
+				}
+			}
+		}
+	}
+
+	div.testimonials-title {
+		display: flex;
+		justify-content: left;
+		div.title-column {
+			h2.testimonials {
+				position: relative;
+				bottom: 10px;
+				font-family: $Bitter-Regular;
+				font-size: 18px;
+				font-weight: 400;
+				text-indent: 275px;
+				letter-spacing: 1px;
+				color: red;
+				&:before {
+					content: '__';
+					color: white;
+					position: relative;
+					font-size: 30px;
+					top: 4px;
+					left: 35px;
+				}
+				&:after {
+					content: ',,';
+					font-family: $Bitter-Bold;
+					position: absolute;
+					font-size: 50px;
+					letter-spacing: 0px;
+					left: 720px;
+					bottom: 0px;
+				}
+			}
+		}
+	}
+	div.testimonials-slider {
+		div.slider-column.col {
+			div.slider {
+				.carousel-indicators {
+					[data-bs-target] {
+						height: 7px;
+						width: 7px;
+						border: 2px solid rgba(0, 160, 86, 255);
+						background: none;
+					}
+					.active {
+						background-color: rgba(0, 160, 86, 255);
+					}
+				}
+				div.carousel-caption {
+					bottom: 20px;
+					align-items: center;
+					position: relative;
+					justify-content: none;
+					display: flex;
+					align-items: flex-start;
+					left: 310px;
+					h3.slide-title {
+						font-size: 16px;
+						opacity: 0.7;
+						text-transform: none;
+						font-weight: normal;
+						text-align: left;
+						font-family: serif;
+					}
+					p.description {
+						color: red;
+						font-weight: bold;
+						font-style: italic;
+						padding: 0px;
+						margin-top: 10px;
+						text-align: left;
+						justify-content: left;
+					}
+				}
+			}
+		}
+	}
+}

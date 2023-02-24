@@ -1,14 +1,16 @@
 import React from 'react';
 import ControlledCarousel from './Slider/Carousel';
-import AnimatedDownArrow from './AnimatedDownArrow/AnimatedDownArrow';
 import AboutLayout from './AboutLayout/AboutLayout';
 import MenuHomeSection from './MenuHomeSection/MenuHomeSection';
 import Paralax from './Paralax/Paralax';
+import Testimonials from './Testimonials/Testimonials';
 import ContactForm from './Contact_Form/ContactForm';
 import LocalizationMap from './LocalizationMap/LocalizationMap';
+import FooterSocialSection from './FooterSocialSection/FooterSocialSection';
 
 const Home = () => {
 	const aboutTitle = {
+		id: 'aboutTitle',
 		title: 'ABOUT US',
 		subTitle:
 			'Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti at optio sit doloremque consequatur quod earum ad atque provident molestias!',
@@ -236,12 +238,13 @@ const Home = () => {
 	return (
 		<>
 			<ControlledCarousel indicators={false} controls={true} slideData={homeSlideData} />
-			<AnimatedDownArrow />
 			<AboutLayout aboutTitle={aboutTitle} aboutLayoutContent={aboutLayoutContent} />
 			<Paralax />
 			<MenuHomeSection menu={menuList} />
+			<Testimonials />
 			<ContactForm />
 			<LocalizationMap />
+			<FooterSocialSection />
 		</>
 	);
 };

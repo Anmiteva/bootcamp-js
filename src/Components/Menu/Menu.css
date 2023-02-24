@@ -1,0 +1,166 @@
+@font-face {
+  font-family: "Bitter-Italic";
+  src: url("./fonts/Bitter-Italic.woff2") format("woff2"), url("./fonts/Bitter-Italic.woff") format("woff");
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "LobsterTwo-Bold";
+  src: url("./fonts/LobsterTwo-Bold.woff2") format("woff2"), url("./fonts/LobsterTwo-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Bitter-Bold";
+  src: url("./fonts/Bitter-Bold.woff2") format("woff2"), url("./fonts/Bitter-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Bitter-Regular";
+  src: url("./fonts/Bitter-Regular.woff2") format("woff2"), url("./fonts/Bitter-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "LobsterTwo-BoldItalic";
+  src: url("./fonts/LobsterTwo-BoldItalic.woff2") format("woff2"), url("./fonts/LobsterTwo-BoldItalic.woff") format("woff");
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "LobsterTwo-Italic";
+  src: url("./fonts/LobsterTwo-Italic.woff2") format("woff2"), url("./fonts/LobsterTwo-Italic.woff") format("woff");
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "LobsterTwo-Regular";
+  src: url("./fonts/LobsterTwo-Regular.woff2") format("woff2"), url("./fonts/LobsterTwo-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Sofia Sans Extra Condensed";
+  src: url("./fonts/SofiaSansExtraCondensed-Thin.woff2") format("woff2"), url("./fonts/SofiaSansExtraCondensed-Thin.woff") format("woff");
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+.main-menu {
+  min-height: 95vh;
+  margin-right: 50px;
+  margin-top: 100px;
+}
+.main-menu .menu-logo {
+  text-align: center;
+  padding-left: 15px;
+}
+.main-menu .menu-logo .menu-logo1 {
+  float: left;
+  position: relative;
+  top: 50px;
+  right: 110px;
+  width: 250px;
+  height: 400px;
+  margin-top: 100px;
+}
+.main-menu .menu-logo .menu-logo2 {
+  float: right;
+  position: relative;
+  top: 50px;
+  left: 135px;
+  width: 200px;
+  height: 400px;
+  margin-top: 120px;
+}
+.main-menu .menu-container {
+  margin: -300px 0;
+  position: relative;
+  right: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.main-menu .menu-logo-line {
+  gap: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 60px;
+}
+.main-menu .menu-logo-line .menu-logo-lines {
+  margin-top: 50px;
+  background-color: #e5e0e0;
+}
+
+@media screen and (min-width: 992px) {
+  .main-menu .menu-container {
+    padding-left: 40px;
+  }
+  .main-menu .menu-logo-line {
+    padding-bottom: 50px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .main-menu {
+    max-width: 85%;
+  }
+  .main-menu .menu-logo {
+    margin: 0 20%;
+  }
+  .main-menu .menu-logo .main-logo {
+    margin-top: 50px;
+    padding-left: 130px;
+  }
+  .main-menu .menu-logo .menu-logo1 {
+    top: -350px;
+    right: 155px;
+  }
+  .main-menu .menu-logo .menu-logo2 {
+    top: -850px;
+    left: 250px;
+  }
+  .main-menu .menu-container {
+    -moz-column-gap: 100px;
+         column-gap: 100px;
+    padding-left: 220px;
+    margin: -850px -100px;
+    left: -80px;
+  }
+  .main-menu .menu-logo-line {
+    top: -120px;
+    left: 200px;
+    position: relative;
+  }
+}
+@media screen and (max-width: 576px) {
+  .main-menu .menu-logo .main-logo {
+    max-width: 250px;
+    max-height: 250px;
+    margin: 0 -10px;
+    padding: 0;
+  }
+  .main-menu .menu-logo .menu-logo1, .main-menu .menu-logo .menu-logo2 {
+    display: none;
+  }
+  .main-menu .menu-container {
+    margin: 50px 10px;
+  }
+  .main-menu .menu-logo-line {
+    top: 0;
+    left: 10px;
+    padding-bottom: 100px;
+  }
+  .main-menu .menu-logo-line .menu-logo-lines {
+    background-color: #252424 !important;
+  }
+}/*# sourceMappingURL=Menu.css.map */

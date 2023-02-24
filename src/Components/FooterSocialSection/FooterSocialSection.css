@@ -1,0 +1,8 @@
+.social-nets {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  background-color: red;
+  padding: 25px 50px;
+  gap: 15px;
+}/*# sourceMappingURL=FooterSocialSection.css.map */

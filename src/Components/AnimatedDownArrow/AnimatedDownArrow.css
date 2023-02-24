@@ -1,6 +1,7 @@
-div .App .circle {
+div .circle {
   position: relative;
-  display: block;
+  display: flex;
+  justify-content: center;
   border-radius: 50%;
   width: 35px;
   height: 35px;
@@ -10,19 +11,64 @@ div .App .circle {
   bottom: 70px;
 }
 
-div .App .circle .arrow {
+div .circle .arrow {
   position: relative;
   display: flex;
-  align-items: center;
-  bottom: 5px;
-  left: 25%;
+  justify-content: center;
+  bottom: 13px;
   color: white;
   -webkit-animation: sdb05 1.5s infinite;
           animation: sdb05 1.5s infinite;
 }
 
-@media only screen and (max-width: 768px) {
-  div .App .circle {
+@media only screen and (max-width: 1400px) {
+  div .circle {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    border: 2px solid rgba(255, 255, 255, 0.7);
+    align-items: center;
+    left: 48%;
+    bottom: 70px;
+  }
+  div .circle .arrow {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    bottom: 13px;
+    color: white;
+    -webkit-animation: sdb05 1.5s infinite;
+            animation: sdb05 1.5s infinite;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  div .circle {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    border: 2px solid rgba(255, 255, 255, 0.7);
+    align-items: center;
+    left: 48%;
+    bottom: 70px;
+  }
+  div .circle .arrow {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    bottom: 13px;
+    color: white;
+    -webkit-animation: sdb05 1.5s infinite;
+            animation: sdb05 1.5s infinite;
+  }
+}
+@media only screen and (max-width: 992px) {
+  div .circle {
     position: relative;
     display: flex;
     justify-content: center;
@@ -32,23 +78,47 @@ div .App .circle .arrow {
     height: 28px;
     top: -50px;
   }
-  div .App .circle .arrow {
+  div .circle .arrow {
     position: relative;
     display: flex;
     justify-content: center;
     width: 1, 5%;
     height: 81%;
     left: 3%;
-    bottom: 9px;
+    bottom: 7px;
     left: -1.5%;
     -webkit-animation: sdb06 1.5s infinite;
             animation: sdb06 1.5s infinite;
   }
 }
-@media only screen and (max-width: 600px) {
-  div .App .circle {
+@media only screen and (max-width: 768px) {
+  div .circle {
     position: relative;
-    display: block;
+    display: flex;
+    justify-content: center;
+    left: 48%;
+    bottom: 70px;
+    width: 28px;
+    height: 28px;
+    top: -50px;
+  }
+  div .circle .arrow {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 1, 5%;
+    height: 81%;
+    left: 3%;
+    bottom: 7px;
+    left: -1.5%;
+    -webkit-animation: sdb06 1.5s infinite;
+            animation: sdb06 1.5s infinite;
+  }
+}
+@media only screen and (max-width: 576px) {
+  div .circle {
+    position: relative;
+    display: flex;
     justify-content: center;
     left: 48%;
     bottom: 70px;
@@ -56,13 +126,13 @@ div .App .circle .arrow {
     height: 27px;
     top: -45px;
   }
-  div .App .circle .arrow {
+  div .circle .arrow {
     position: relative;
     display: flex;
     justify-content: center;
     left: 1.5%;
     bottom: 7px;
-    width: 5, 5%;
+    width: 1, 5%;
     height: 80%;
     -webkit-animation: sdb06 1.5s infinite;
             animation: sdb06 1.5s infinite;
@@ -119,4 +189,4 @@ div .App .circle .arrow {
     transform: translate(0, 17px);
     opacity: 0;
   }
-}/*# sourceMappingURL=AnimatedDownArrow.css.map */
+}

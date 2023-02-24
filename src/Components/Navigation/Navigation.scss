@@ -1,5 +1,8 @@
 @import '../../constants.scss';
 
+html {
+	scroll-padding-top: var(--scroll-padding, 50px);
+}
 
 header {
 	position: fixed;

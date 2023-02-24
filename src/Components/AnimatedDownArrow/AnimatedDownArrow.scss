@@ -1,67 +1,57 @@
-div .App .circle {
+div .chevron-container {
     position: relative;
-    display: block;
+    display: flex;
+    justify-content: center;
+    bottom: 0;
+    z-index: 50;
+}
+
+div .chevron-container .circle {
     border-radius: 50%;
     width: 35px;
     height: 35px;
     border: 2px solid rgba(255,255,255,0.7) ;
-    align-items: center;
-    left: 48%;
-    bottom: 70px;
+    cursor: pointer;
 }
 
-div .App .circle .arrow {
+div .chevron-container .circle .arrow {
     position: relative;
     display: flex;
+    justify-content: center;
     align-items: center;
-    bottom: 5px;
-    left: 25%;
+    bottom: 4px;
     color: white;
     animation: sdb05 1.5s infinite;
 }
 
 @media only screen and (max-width: 768px){
-    div .App .circle{  
+    div .chevron-container{  
         position: relative;
         display: flex;
         justify-content: center;
-        left: 48%;
-        bottom: 70px;
-        width: 28px;
-        height: 28px;
-        top: -50px;
     }
-    div .App .circle .arrow {
+    div .chevron-container .circle .arrow {
         position: relative;
         display: flex;
         justify-content: center;
-        width: 1,5%;
-        height: 81%;
-        left: 3%;
-        bottom: 9px;
-        left: -1.5%;
-        animation: sdb06 1.5s infinite;
+        animation: sdb05 1.5s infinite;
         
 }}
 @media only screen and (max-width: 600px){
-    div .App .circle{  
-        position: relative;
-        display: block;
-        justify-content: center;
-        left: 48%;
-        bottom: 70px;
-        width: 27px;
-        height: 27px;
-        top: -45px;
-    }
-    div .App .circle .arrow {
+    div .chevron-container .circle{  
         position: relative;
         display: flex;
         justify-content: center;
-        left: 1.5%;
-        bottom: 7px;
-        width: 5,5%;
-        height: 80%;
+        width: 27px;
+        height: 27px;
+        bottom: 0;
+        z-index: 50;
+    }
+    div .chevron-container .circle .arrow {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        bottom: 8px;
         animation: sdb06 1.5s infinite;
       
 }}
@@ -75,7 +65,7 @@ div .App .circle .arrow {
       opacity: 1;
     }
     100% {
-      transform: translate(0, 25px);
+      transform: translate(0, 24px);
       opacity: 0;
     }
   }
