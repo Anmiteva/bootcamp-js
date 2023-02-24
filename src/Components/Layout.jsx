@@ -6,6 +6,7 @@ import Menu from './Menu/Menu';
 import Login from './Login/Login';
 import LocalizationMap from './LocalizationMap/LocalizationMap';
 import ResetForm from './Reset_Form/ResetForm';
+import Register from './Register/Register';
 
 const Layout = () => {
 	return (
@@ -16,6 +17,7 @@ const Layout = () => {
 			<Route path='/localization' element={<LocalizationMap />} />
 			<Route path='/login' element={<Login />} />
 			<Route path='/resetForm' element={<ResetForm />} />
+			<Route path='/sign-up' element={<Register />} />
 		</Routes>
 	);
 };

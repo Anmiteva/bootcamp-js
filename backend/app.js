@@ -11,13 +11,15 @@ let menuRouter = require('./routes/menu');
 let orderRouter = require('./routes/order');
 
 let mongoose = require('mongoose');
+let sliderRouter = require('./routes/sliders');
+let reservationRouter = require('./routes/reservation');
 
 //MongoDB Connection
 
 let app = express();
 
 mongoose.set('strictQuery', false);
-mongoose.connect('mongodb://localhost:27017/elexir-db', {
+mongoose.connect('mongodb://127.0.0.1/elexir-db', {
 	useNewUrlParser: true,
 	useUnifiedTopology: true,
 });
@@ -42,6 +44,8 @@ app.use('/', indexRouter);
 app.use('/users', usersRouter);
 app.use('/menu', menuRouter);
 app.use('/order', orderRouter);
+app.use('/sliders', sliderRouter);
+app.use('/reservation', reservationRouter);
 
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {
